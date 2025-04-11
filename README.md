@@ -1,9 +1,23 @@
 # csc251_team6project
 This file is for csc251 group project.
 
+### Team Members
+- Sha He
+- Bethany Hill
+- Arthur Holmes
+- Cody Jackson
+
+### Project Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/CSC120shahe/csc251_team6project.git
+   cd csc251_team6project.git
+   ```
+
 ### OBJECTIVES
 - Develop a deep understanding on one or more topics in data structures
 - Learn how to work in a group
+
 ### INSTRUCTION
 Our department requires every course to have a group project. There are two goals.
 - First, students will develop a deeper understanding on topics that interest them.
@@ -25,9 +39,14 @@ group will have 10 minutes to do the following:
 - Share what have been learned in this project
 Only the team lead submits the following items in Blackboard, all other team members
 get the same grade as the team lead, the name of team members will be from the
-name list provided by the instructor. All the files can be zipped into one zip file.
-1. Project description Word file (1 or 2 pages) with file name end with .docx,
+name list provided by the instructor. 
+
+All the files can be zipped into one zip file.
+1. Project description Word file (1 or 2 pages) with file name end with .docx.
 including what the program is designed to do and what data structures is used.
+
 2. Power Points slide file (used in presentation video) with file name end with .pptx
+
 3. Java source code files with file name end with .java
+
 4. The presentation video or a link for the video
