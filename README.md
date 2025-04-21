@@ -1,52 +1,96 @@
 # csc251_team6project
 This file is for csc251 group project.
 
-### Team Members
+## Team Members
 - Sha He
 - Bethany Hill
 - Arthur Holmes
 - Cody Jackson
 
-### Project Setup
+## Project Setup
 1. Clone the repository:
    ```bash
    git clone https://github.com/CSC120shahe/csc251_team6project.git
    cd csc251_team6project.git
    ```
+2. Install and verify JDK
+3. Install VS Code 和 Java extension pack
 
-### OBJECTIVES
-- Develop a deep understanding on one or more topics in data structures
-- Learn how to work in a group
+## Project name: Student Management System (Java CLI)
 
-### INSTRUCTION
-Our department requires every course to have a group project. There are two goals.
-- First, students will develop a deeper understanding on topics that interest them.
-- Second, students will get teamwork experience, which is important in the software
-industry.
-The task is to create a Java application that uses at least one data structure introduced
-in this course, such as Lists, Stacks, Queues in chapter 20, 24.
-Instructor will assign students to groups with 4 or 5 members and provide the names
-and email addresses.
-Students will participate the following activities:
-1. Discuss with group members and come up with a topic and start working on
-project description file.
-2. Design, implement and test the program, while keep updating project description
-file.
-3. Prepare presentation slides, give presentation and record it for submission. Each
-group will have 10 minutes to do the following:
-- Provide a brief description
-- Give a Demo of the program
-- Share what have been learned in this project
-Only the team lead submits the following items in Blackboard, all other team members
-get the same grade as the team lead, the name of team members will be from the
-name list provided by the instructor. 
+This is a simple **Student Management System** written in Java. It is a command-line application that allows users to manage student records including ID, name, and grade.This is a **pure in-memory + command-line** project. It does **not use a database**.
 
-All the files can be zipped into one zip file.
-1. Project description Word file (1 or 2 pages) with file name end with .docx.
-including what the program is designed to do and what data structures is used.
+### ✅ Features
 
-2. Power Points slide file (used in presentation video) with file name end with .pptx
+- Add a student
+- Delete a student by ID
+- Search for a student by name
+- Update a student's grade
+- Display all student records
+- Automatically load and save student data to a file
 
-3. Java source code files with file name end with .java
+### ✅ Project Type
 
-4. The presentation video or a link for the video
+This is a **pure in-memory + command-line** project. It does **not use a database**.
+
+- Student records are stored in memory using `ArrayList<Student>`
+- Data is **saved to a `.csv` file** named `students.csv`
+- When the program starts, it **reads existing records from the file**
+- When the program exits, it **automatically writes the data back to the file**
+
+### ✅ Technologies Used
+
+- Java 17 or above
+- File I/O (`BufferedReader`, `BufferedWriter`)
+- Java Collections (`ArrayList`)
+- Command-line interface (CLI)
+
+### ✅ File Structure
+
+```
+Student/ 
+Student.java // Defines the Student class
+StudentManager.java // Manages the list of students 
+Main.java // CLI program entry point
+students.csv // Auto-generated data file
+README.md // Project overview
+```
+
+## ▶️ How to Run
+
+1. **Compile the code:**
+
+   ```
+   javac *.java
+   ```
+
+2. **Run the program:**
+   ```
+   java Main
+   ```
+3. **Follow the menu options to manage students.**
+
+4. **Example CSV Output**
+
+   After exiting the program, the student data will be saved in this format:
+   ```
+   101,Alice,98.5
+
+   102,Bob,85.0
+   ```
+## 💡 Possible Improvements
+Support sorting by grade or name
+
+Add fuzzy search (partial match)
+
+
+## data structure
+This project demonstrates a deep understanding of ArrayList, one of the most fundamental data structures in Java. It is used to store and manipulate a dynamic list of Student objects, supporting operations like adding, removing, searching, updating, and iterating over elements.
+
+- Use ArrayList to store a dynamic number of student objects
+- Use add() to insert students into the list
+- Use removeIf() to delete students from the list
+- Iterate over the ArrayList to search for students
+- Update the content of a specific student object
+- Store and reconstruct ArrayList data using file I/O
+
