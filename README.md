@@ -27,6 +27,11 @@ This is a simple **Student Management System** written in Java. It is a command-
 - Search for a student by name
 - Update a student's grade
 - Display all student records
+- Sort students by grades(highest to lowest)
+- Sort students by grades(lowest to highest)
+- Fuzzy search
+- Generate demo students
+- Display grades as a bar chart
 - Automatically load and save student data to a file
 
 ### ✅ Project Type
@@ -40,7 +45,7 @@ This is a **pure in-memory + command-line** project. It does **not use a databas
 
 ### ✅ Technologies Used
 
-- Java 17 or above
+- Java
 - File I/O (`BufferedReader`, `BufferedWriter`)
 - Java Collections (`ArrayList`)
 - Command-line interface (CLI)
@@ -79,9 +84,13 @@ README.md // Project overview
    102,Bob,85.0
    ```
 ## 💡 Possible Improvements
-Support sorting by grade or name
+- Add student filtering (e.g., honor roll, failing students).
 
-Add fuzzy search (partial match)
+- Advanced chart analytics (highest grade, average grade line).
+
+- Database integration (replace CSV with MySQL or SQLite).
+
+- Full GUI version (buttons and forms instead of command-line).
 
 
 ## data structure

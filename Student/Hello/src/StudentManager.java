@@ -129,7 +129,8 @@ public class StudentManager {
       // Keep generating IDs until we get one that's completely new
       String id;
       do {
-        id = "ID:" + (1000 + rand.nextInt(9000));
+       // id = "ID:" + (1000 + rand.nextInt(9000));
+        id = Integer.toString(1000 + rand.nextInt(9000));
       } while (findStudentById(id) != null || usedIds.contains(id));
       usedIds.add(id);
 
